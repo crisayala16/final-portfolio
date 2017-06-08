@@ -11,47 +11,136 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="nav">
-			<ul id="nav-list">
-				<li class="nav-item"><a href="/about">ABOUT ME</a></li>
-				<li class="nav-item"><a href="/skills">SKILLS</a></li>
-				<li class="nav-item"><a href="/portfolio">MY PORTFOLIO</a></li>
-				<li class="nav-item"><a href="/contact">GET IN TOUCH</a></li>
-			</ul>
-</div>
-	<div class="container home-section">
+	<div class="navi">
+		<ul id="nav-list">
+			<li><a class="nav-item" href="#about">ABOUT ME</a></li>
+			<li><a class="nav-item" href="#skills">SKILLS</a></li>
+			<li><a class="nav-item" href="#portfolio">MY PORTFOLIO</a></li>
+			<li><a class="nav-item" href="#contact">GET IN TOUCH</a></li>
+		</ul>
+	</div>
+
+	<div class="home-section">
 		<div class="home-header">
-			<a id="name-header" href="/" class="center-text animated fadeInDown">
+			<p id="name-header" href="/" class="center-text animated fadeInDown">
 				Cristopher Ayala Paz
-			</a>
+			</p>
 			<p id="full-dev-title" class="center-text">Full Stack Developer</p>
 		</div>
 	</div>
-	<div class="container about-section">
+	<div id="about">
 		<p id="about-me-title" class="center-text">About Me</p>
-		<div class="half-col">
+		<div>
 			<img id="about-portrait" src="images/me.jpg" alt="Cristopher Ayala Paz portrait">
 		</div>
-		<div class="half-col">
+		<div>
 			<div id="about-me-content">
-			<h3 class="open-statement">
-			I am a team-oriented full stack developer who is passionate about collaboration and continuous improvement. I enjoy using the MERN Stack to create user-friendly and efficient web applications. I am always on the hunt for the best tools and technology to not only benefit my work, but as well as my peers work.</h3>
-			<h3 class="open-statement">I am currently enrolled at the George Washington Coding Bootcamp and am loving every second of it. We are constantly being put in a fast paced enviornment, forcing us to learn quickly and adapt to new technology. This has come to be very gratifying and rewarding for me, and I can't wait to actually apply this in the real world.
-			</h3>
-		</div>
-		</div>
-	</div>
-	<div class="container portfolio-section">
-		<div id="portfolio">
-			<div class="port-item" id="port0"></div>
-			<div class="port-item" id="port1"></div>
-			<div class="port-item" id="port2"></div>
-			<div class="port-item" id="port3"></div>
-			<div class="port-item" id="port4"></div>
-			<div class="port-item" id="port5"></div>
-			<div class="port-item" id="port6"></div>
-
+				<p class="open-statement">
+					I am a team-oriented full stack developer who is passionate about collaboration and continuous improvement. I enjoy using the MERN Stack to create user-friendly and efficient web applications. I am always on the hunt for the best tools and technology to not only benefit my work, but as well as my peers work.
+				</p>
+				<p class="open-statement">
+					I am currently enrolled at the George Washington Coding Bootcamp and am loving every second of it. We are constantly being put in a fast paced enviornment, forcing us to learn quickly and adapt to new technology. This has come to be very gratifying and rewarding for me, and I can't wait to actually apply this in the real world.
+				</p>
+			</div>
 		</div>
 	</div>
+	<div id="portfolio">
+		<p id="portfolio-title" class="center-text">Portfolio</p>
+		<div id="port-group">
+			<div class="row">
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port0">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port1">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port2">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port3">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port4">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port5">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<div class="port-item">
+					<div id="port6">
+			
+				<div class="hover-box">
+								
+							</div>			</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port7">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="port-item">
+						<div id="port8">
+							<div class="hover-box">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jquery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src='js/logic.js'></script>
 </body>
 </html>
