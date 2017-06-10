@@ -38,6 +38,7 @@ $(document).ready(function(){
 				}
 				if($(this).scrollTop() > 1600 && $(this).scrollTop() < 2000){
 					$('#skills-title').addClass('animated fadeInUp');
+					$('.skill-cover').css({right: '100%'});
 				}
 				if($(this).scrollTop() > 2200){
 					$('#portfolio-title').addClass('animated fadeInUp');

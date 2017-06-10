@@ -215,6 +215,8 @@ li{
 	margin: 0 auto;
 }
 .skill-type{
+	display: block;
+	width: 100%;
 	text-align: center;
 	padding: 70px 0px;
 	font-size: 45px;
@@ -226,8 +228,42 @@ li{
 	display: block;
 	margin: 0 auto;
 	text-align: center;
+	max-width: 1200px;
+	
+
+}
+.skill-cover{
+	height: 150px;
+	display: block;
+	background: black;
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	z-index: 1;
+	-webkit-transition: right 2s; 
+	-moz-transition: right 2s; 
+	-o-transition: right 2s; 
+	transition: right 2s;
+	transition-delay: 1s;
+
+
 }
 .skill-item{
 	font-size: 120px;
-	margin: 10px;	
+	margin: 10px;
+
+}
+@media only screen and (max-width:920px){
+	.skill-item{
+		font-size: 80px;
+		padding: 18px 0px;
+
+	}
+	.skill-type{
+		margin-top: 20px 0px;
+	}	
+	.skill-cover{
+		left: 0%;
+		right: 0%;
+	}	
 }
