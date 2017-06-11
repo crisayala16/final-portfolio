@@ -29,22 +29,26 @@ $(document).ready(function(){
 				opacity: 1
 			}, 1500);
 	};
+	var lastST = 0;
 	$(window).scroll(function(){
 		if($(this).width() < 2000){
 			if($(this).height() < 1000){
-				if($(this).scrollTop() > 800 && $(this).scrollTop() < 1400){
-					$('#about-me-title').addClass('animated fadeInUp');
-
+				var st = $(this).scrollTop();
+				if(st > 800 && st < 1400){				
+					$('#about-me-title').css({fontSize: '60px'});
 				}
-				if($(this).scrollTop() > 1600 && $(this).scrollTop() < 2000){
-					$('#skills-title').addClass('animated fadeInUp');
+				if(st > 1600 && st < 2000){
+					$('#skills-title').css({fontSize: '60px'});
 					$('.skill-cover').css({right: '100%'});
 				}
-				if($(this).scrollTop() > 2200){
-					$('#portfolio-title').addClass('animated fadeInUp');
+				if(st > 2600 && st < 3200){
+					$('#portfolio-title').css({fontSize: '60px'});
 					portAnimation();
 				}
-				if($(this).scrollTop() > 0 && $(this).scrollTop() < 200){
+				if(st > 3600 && st < 4000){
+					$('#contact-title').css({fontSize: '60px'});
+				}
+				if(st > 0 && st < 200){
 					$('.navi').css({background: 'rgba(48,62,78, 0)'});
 					$('.nav-item').css({
 						fontSize: '15px', 
@@ -52,7 +56,7 @@ $(document).ready(function(){
 					});
 
 				}
-				if($(this).scrollTop() > 250 ){
+				if(st > 250 ){
 					$('.navi').css({background: 'rgba(48,62,78, 0.9)'});
 					$('.nav-item').css({
 						fontSize: '16px',
