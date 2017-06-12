@@ -47,6 +47,10 @@ $(document).ready(function(){
 				}
 				if(st > 3600 && st < 4000){
 					$('#contact-title').css({fontSize: '60px'});
+					$('#submit-btn').css({
+						left: '0',
+						opacity: '1'
+					});
 				}
 				if(st > 0 && st < 200){
 					$('.navi').css({background: 'rgba(48,62,78, 0)'});

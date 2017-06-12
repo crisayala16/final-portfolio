@@ -80,7 +80,7 @@ li{
 	font-family: 'Pacifico', cursive;
 	border-bottom: 5px ridge #646464;
 	padding: 120px 0px 60px 0px;
-	width: 300px;
+	width: 700px;
 	display: block;
 	margin: 0 auto 50px auto;
 	text-align: center;
@@ -127,7 +127,7 @@ li{
 	font-family: 'Pacifico', cursive;
 	border-bottom: 5px ridge #646464;
 	padding: 120px 0px 60px 0px;
-	width: 300px;
+	width: 700px;
 	margin: 0 auto 20px auto;
 	-webkit-transition: font-size 1s; 
 	-moz-transition: font-size 1s; 
@@ -263,9 +263,9 @@ li{
 }
 .form-contain{
 	max-width: 1200px;
-	padding: 20px;
+	padding: 5px;
 	display: block;
-	margin: 25px auto;
+	margin: 10px auto;
 }
 #contact{
 	height: 100vh;
@@ -273,6 +273,21 @@ li{
 .input-label{
 	font-size: 20px;
 	color: black;
+}
+#submit-btn{
+	margin-top: 20px;
+	display: block;
+	padding: 15px 20px;
+	font-size: 20px;
+	position: relative;
+	left: 100%;
+	opacity: 0;
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+	transition-delay: 1s;
+	
 }
 @media only screen and (max-width:1414px){
 	.skill-cover{

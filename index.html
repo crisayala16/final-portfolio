@@ -209,19 +209,34 @@
 		</div>
 	</div>
 	<div id="contact">
-		<p id="contact-title" class="center-text">Contact</p>
-		<div class="form-contain">
-			<label class="input-label" for="focusedInput">E-mail</label>
-			<input class="form-control" id="focusedInput" type="text">
-		</div>
+		<p id="contact-title" class="center-text">Get In Touch</p>
+		<form id="myform">
+			<div class="form-contain">
+				<label class="input-label" for="name-input">Name</label>
+				<input class="form-control" name="from_name" id="name-input" type="text">
+			</div>
 
-		<div class="form-contain">
-			<label for="textArea" class="input-label">Message</label>	
-			<textarea class="form-control" rows="15" id="textArea"></textarea>
-		</div>
+			<div class="form-contain">
+				<label class="input-label" for="focusedInput">E-mail</label>
+				<input class="form-control" name="from_email" id="focusedInput" type="text">
+			</div>
+
+			<div class="form-contain">
+				<label for="textArea" class="input-label">Message</label>	
+				<textarea class="form-control" name="message_html" rows="15" id="textArea"></textarea>
+				<button type="submit" id="submit-btn" class="btn btn-primary">Send</button>
+			</div>
+		</form>
 	</div>
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src='js/logic.js'></script>
-</body>
-</html>
+	<script type="text/javascript" src='js/animations.js'></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+				emailjs.init("user_kPGPWQtVjlC1bYh37c7xj");
+			})();
+		</script>
+		<script type="text/javascript" src='js/email.js'></script>
+	</body>
+	</html>
