@@ -3,6 +3,7 @@ body{
 	font-family: 'Quicksand', sans-serif;
 	color: #dcdcda;
 	line-height: 1.5em;
+	overflow-x: hidden;
 }
 a{
 	text-decoration: none;
@@ -31,9 +32,6 @@ li{
 }
 .center-text{
 	text-align: center;
-}
-.hide{
-	display: none;
 }
 .navi{
 	display: block;
@@ -77,7 +75,7 @@ li{
 	background: #00001a;
 }
 #about-me-title, #skills-title, #contact-title{
-	font-size: 0px;
+	font-size: 55px;
 	font-family: 'Pacifico', cursive;
 	border-bottom: 5px ridge #646464;
 	padding: 120px 0px 60px 0px;
@@ -85,10 +83,6 @@ li{
 	display: block;
 	margin: 0 auto 50px auto;
 	text-align: center;
-	-webkit-transition: font-size 1s; 
-	-moz-transition: font-size 1s; 
-	-o-transition: font-size 1s; 
-	transition: font-size 1s;
 }
 #about-portrait{
 	display: block;
@@ -115,16 +109,16 @@ li{
 	width: 33.33%;
 	float: left;
 }
-.row{
+/*.row{
 	clear: both;
-}
+}*/
 #portfolio{
 	height: 100vh;
 	background: #00001a;
 }
 #portfolio-title{
 	color: #7da3a2;
-	font-size: 0px;
+	font-size: 55px;
 	font-family: 'Pacifico', cursive;
 	border-bottom: 5px ridge #646464;
 	padding: 120px 0px 60px 0px;
@@ -136,87 +130,41 @@ li{
 	transition: font-size 1s;
 }
 #port-group{
-	max-width: 1200px;
-	margin: 0 auto; 
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around; 
+	align-items: center;
+	padding: 150px 0px;
 }
 .port-item{
 	margin: 10px auto;
-	width: 300px;
-	height: 200px;
+	width: 400px;
+	height: 300px;
 }
 #port0{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
+	width: 400px;
+	height: 300px;
 	background: url(../images/img0.png);
-	background-size: 300px 200px;
+	background-size: 400px 300px;
 	border: 5px solid #303e4e;
 	border-radius: 10px;
 }
 #port1{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
+	width: 400px;
+	height: 300px;
 	background-image: url(../images/img1.jpg);
-	background-size: 300px 200px;
+	background-size: 400px 300px;
 	border: 5px solid #303e4e;
 	border-radius: 10px;
 	
 }
 #port2{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
-	background-image: url(../images/img2.jpg);
-	background-size: 300px 200px;
+	width: 400px;
+	height: 300px;
+	background-image: url(../images/maritant-screen.png);
+	background-size: 400px 300px;
 	border: 5px solid #303e4e;
 	border-radius: 10px;	
-}
-#port3{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
-	background-image: url(../images/img3.jpg);
-	background-size: 300px 200px;
-	border: 5px solid #303e4e;
-	border-radius: 10px;
-	
-}
-#port4{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
-	background-image: url(../images/img4.png);
-	background-size: 300px 200px;
-	border: 5px solid #303e4e;
-	border-radius: 10px;
-}
-#port5{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
-	background-image: url(../images/img5.jpg);
-	background-size: 300px 200px;
-	border: 5px solid #303e4e;
-	border-radius: 10px;	
-}
-#port6{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
-	background-image: url(../images/img6.jpg);
-	background-size: 300px 200px;
-	border: 5px solid #303e4e;
-	border-radius: 10px;
-}
-#port7{
-	opacity: 0;
-	width: 300px;
-	height: 200px;
-	background-image: url(../images/img7.jpg);
-	background-size: 300px 200px;
-	border: 5px solid #303e4e;
-	border-radius: 10px;
 }
 #skills-title, #contact-title{
 	color: black;
@@ -280,33 +228,54 @@ li{
 	display: block;
 	padding: 15px 20px;
 	font-size: 20px;
-	position: relative;
-	left: 100%;
-	opacity: 0;
-	-webkit-transition: 2s;
-	-moz-transition: 2s;
-	-o-transition: 2s;
-	transition: 2s;
-	transition-delay: 1s;
-	
 }
-@media only screen and (max-width:1414px){
-	.skill-cover{
-		left: 10%;
-		right: 10%;
+@media only screen and (max-width:1335px){
+	.port-item{
+		margin: 10px auto;
+		width: 300px;
+		height: 200px;
+	}
+	#port0{
+		width: 300px;
+		height: 200px;
+		background: url(../images/img0.png);
+		background-size: 300px 200px;
+		border: 5px solid #303e4e;
+		border-radius: 10px;
+	}
+	#port1{
+		width: 300px;
+		height: 200px;
+		background-image: url(../images/img1.jpg);
+		background-size: 300px 200px;
+		border: 5px solid #303e4e;
+		border-radius: 10px;
+		
+	}
+	#port2{
+		width: 300px;
+		height: 200px;
+		background-image: url(../images/maritant-screen.png);
+		background-size: 300px 200px;
+		border: 5px solid #303e4e;
+		border-radius: 10px;	
 	}
 }
 @media only screen and (max-width:920px){
 	.skill-item{
 		font-size: 100px;
 		padding: 18px 0px;
-
 	}
-	.skill-cover{
-		height: 100px;
-		left: 0%;
-		right: 0%;
-	}	
+	#port-group{
+		padding: 0;
+		flex-flow: column;
+		align-items: center;
+	}
+	.col-4{
+		width: 100%;
+		display: block;
+	}
+	
 }
 @media only screen and (max-width:920px){
 	.skill-item{
