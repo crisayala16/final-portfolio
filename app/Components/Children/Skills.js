@@ -3,7 +3,7 @@ import React from 'react';
 const Skills = (props) => {
 	return(
 		<div id="skills">
-			<p id="skills-title" className="center-text">Skills</p>
+			<p id="skills-title" className="animated fadeInDown center-text">Skills</p>
 			<div id="skills-box">
 				<p className="skill-type">Front End</p>
 				<div className="skill-frontend">

@@ -14,9 +14,6 @@ const About = (props) => {
 					<p className="open-statement">
 						I am a team-oriented full stack developer who is passionate about collaboration and continuous improvement. I enjoy using the MERN Stack to create user-friendly and efficient web applications. I am always on the hunt for the best tools and technology to not only benefit my work, but as well as my peers work.
 					</p>
-					<p className="open-statement">
-						I am currently enrolled at the George Washington Coding Bootcamp and am loving every second of it. We are constantly being put in a fast paced enviornment, forcing us to learn quickly and adapt to new technology. This has come to be very gratifying and rewarding for me, and I can't wait to actually apply this in the real world.
-					</p>
 				</div>
 			</div>
 		</div>

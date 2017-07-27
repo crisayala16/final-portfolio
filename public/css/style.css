@@ -1,5 +1,5 @@
 body{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', sans-serif !important;
 	color: #dcdcda;
 	line-height: 1.5em;
 	overflow-x: hidden;
@@ -54,7 +54,7 @@ li{
 	display: flex;
 	flex-flow: row wrap;
 	margin: 0 auto;
-	justify-content: space-around;
+	justify-content: center;
 }
 .nav-item{
 	display: inline-block !important;
@@ -72,6 +72,7 @@ li{
 }
 .home-section{
 	min-height: 100vh;
+	overflow-y: hidden;
 	background: url(../images/bg-1-img.jpg);
 	background-size: cover;
 }
@@ -79,7 +80,7 @@ li{
 	min-height: 100vh;
 	background: #00001a;
 }
-#about-me-title, #skills-title, #contact-title{
+#about-me-title, #skills-title, #contact-title, #portfolio-title{
 	font-size: 55px;
 	font-family: 'Pacifico', cursive;
 	border-bottom: 5px ridge #646464;
@@ -128,28 +129,28 @@ li{
 }
 #portfolio-title{
 	color: #7da3a2;
-	font-size: 55px;
-	font-family: 'Pacifico', cursive;
-	border-bottom: 5px ridge #646464;
-	padding: 120px 0px 60px 0px;
-	width: 700px;
-	margin: 0 auto 20px auto;
-	-webkit-transition: font-size 1s; 
-	-moz-transition: font-size 1s; 
-	-o-transition: font-size 1s; 
-	transition: font-size 1s;
 }
 #port-group{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around; 
-	align-items: center;
-	padding: 50px 0px;
+	padding: 20px 0px;
 }
 .port-item{
 	margin: 10px auto;
 	width: 400px;
 	height: 300px;
+}
+.port-title{
+	width: 400px;
+	text-align: center;
+	color: #fff;
+}
+.port-desc{
+	width: 400px;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
 }
 #port0{
 	width: 400px;
@@ -175,6 +176,13 @@ li{
 	background-size: 400px 300px;
 	border: 5px solid #303e4e;
 	border-radius: 10px;	
+}
+.git-link{
+	color: #da635d !important;
+}
+.git-link:hover{
+	color: #fff !important;
+	text-decoration: underline !important; 
 }
 #skills-title, #contact-title{
 	color: black;
@@ -250,6 +258,12 @@ li{
 		margin: 10px auto;
 		width: 300px;
 		height: 200px;
+		float: left;
+	}
+	.port-desc{
+		width: 300px;
+		float: left;
+		margin: 10px;
 	}
 	#port0{
 		width: 300px;
@@ -276,8 +290,6 @@ li{
 		border: 5px solid #303e4e;
 		border-radius: 10px;	
 	}
-}
-@media only screen and (max-width:920px){
 	.skill-item{
 		font-size: 70px;
 	}
@@ -298,6 +310,11 @@ li{
 	.nav-list{
 		flex-flow: column wrap;
 	}
+	.col-4{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+	}
 }
 @media only screen and (max-width:639px){
 	#name-header{
@@ -311,7 +328,7 @@ li{
 		margin: 5px;
 		padding: 0px;
 	}
-	#about-me-title, #skills-title, #contact-title{
+	#about-me-title, #skills-title, #portfolio-title, #contact-title{
 		padding-top: 60px;
 		margin-bottom: 10px;
 	}
@@ -320,8 +337,11 @@ li{
 		padding: 5px 0px;
 		margin: 0px;
 	}
+	.port-title{
+		width: 100%;
+	}
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:380px){
 	.nav-item{
 		font-size: 13px !important;
 		padding: 0px !important;
@@ -334,7 +354,7 @@ li{
 		font-size: 20px;
 		padding-top: 0px;
 	}
-	#about-me-title, #skills-title, #contact-title{
+	#about-me-title, #skills-title, #portfolio-title, #contact-title{
 		font-size: 40px;
 		padding-top: 55px;
 		margin-bottom: 10px;
