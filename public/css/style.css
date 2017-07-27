@@ -39,10 +39,6 @@ li{
 	position: fixed !important;
 	top: 0 !important;
 	z-index: 1 !important;
-	-webkit-transition: background 1s; 
-	-moz-transition: background 1s; 
-	-o-transition: background 1s; 
-	transition: background 1s;
 }
 .col-icon{
 	font-size: 30px;
@@ -62,12 +58,8 @@ li{
 	margin: 10px !important;
 	color: #f5f5f5 !important;
 	font-size: 15px !important;
-	-webkit-transition: font-size 1s; 
-	-moz-transition: font-size 1s; 
-	-o-transition: font-size 1s; 
-	transition: font-size 1s;
 }
-.nav-item:hover, .nav-item:focus{
+.nav-link:hover, .nav-link:focus{
 	color: #e44434 !important;
 }
 .home-section{
@@ -340,6 +332,9 @@ li{
 	.port-title{
 		width: 100%;
 	}
+	#about-portrait{
+		width: 220px;
+	}
 }
 @media only screen and (max-width:380px){
 	.nav-item{
@@ -348,7 +343,7 @@ li{
 		margin: 0px !important;
 	}
 	#name-header{
-		font-size: 40px;
+		font-size: 42px;
 	}
 	#full-dev-title{
 		font-size: 20px;
@@ -360,10 +355,9 @@ li{
 		margin-bottom: 10px;
 	}
 	#about-portrait{
-		width: 230px;
+		width: 210px;
 	}
 	.open-statement{
-		font-size: 18px;
+		font-size: 16px;
 	}
-
 }

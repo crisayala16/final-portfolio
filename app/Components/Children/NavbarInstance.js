@@ -12,19 +12,19 @@ const NavbarInstance = (props) => {
 		    <Navbar.Collapse>
 		      <Nav className='nav-list'>
 		        <NavItem className='nav-item' eventKey={1}>
-			        	<Link to='/'>HOME</Link>
+			        	<Link className='nav-link' to='/'>HOME</Link>
 		        </NavItem>
 		        <NavItem className='nav-item' eventKey={2}>
-			        	<Link to='/about'>ABOUT</Link>
+			        	<Link className='nav-link' to='/about'>ABOUT</Link>
 		        </NavItem>
 		        <NavItem className='nav-item' eventKey={3}>
-			        	<Link to='/skills'>SKILLS</Link>
+			        	<Link className='nav-link' to='/skills'>SKILLS</Link>
 		        </NavItem>
 		        <NavItem className='nav-item' eventKey={4}>
-			        	<Link to='/portfolio'>PORTFOLIO</Link>
+			        	<Link className='nav-link' to='/portfolio'>PORTFOLIO</Link>
 		        </NavItem>
 		        <NavItem className='nav-item' eventKey={5}>
-			        	<Link to='/contact'>CONTACT</Link>
+			        	<Link className='nav-link' to='/contact'>CONTACT</Link>
 		        </NavItem>
 		      </Nav>
 		    </Navbar.Collapse>
