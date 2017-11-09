@@ -129,20 +129,23 @@ li{
 	padding: 20px 0px;
 }
 .port-item{
+	display: block;
 	margin: 10px auto;
 	width: 400px;
 	height: 300px;
 }
 .port-title{
 	width: 400px;
+	margin: 0 auto;
 	text-align: center;
 	color: #fff;
 }
 .port-desc{
 	width: 400px;
 	color: #fff;
-	display: inline-block;
+	display: block;
 	font-size: 15px;
+	margin: 0 auto;
 }
 #port0{
 	width: 400px;

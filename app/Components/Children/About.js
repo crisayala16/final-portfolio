@@ -1,5 +1,4 @@
 import React from 'react';
-
 const About = (props) => {
 	return(
 		<div id="about">
@@ -12,8 +11,7 @@ const About = (props) => {
 			<div>
 				<div id="about-me-content">
 					<p className="open-statement">
-						I am a Team-oriented Full Stack Developer with a main focus in the MERN (MongoDB, Express, React, Node) Stack. Although I almost always prefer a team-oriented working environment, I am still able to work alone and preform all necessary components of a fully functional website.
-						Picking up new technologies has become the norm for me. When starting a new project, I try to always incorporate some form of new tool or technology that is foreign to me.
+						​I am a team-oriented Full Stack Developer with a strong focus on the MERN Stack (MongoDB, Express, React, Node). Although I enjoy working on an agile team, I’m also capable of working alone to build top-notch products. I enjoy picking up new technologies and aim to incorporate new technologies or tools into every project I work on.
 					</p>
 				</div>
 			</div>

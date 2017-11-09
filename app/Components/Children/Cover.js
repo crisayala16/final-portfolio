@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './Footer.js';
 const Cover = (props) => {
 	return(
 		<div className="home-section">
