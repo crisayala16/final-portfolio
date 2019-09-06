@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Skills = (props) => {
-	return(
+	return (
 		<div id="skills">
 			<p id="skills-title" className="animated fadeInDown center-text">Skills</p>
 			<div id="skills-box">
@@ -18,16 +18,13 @@ const Skills = (props) => {
 							<i className="devicon-javascript-plain colored"></i>
 						</li>
 						<li className="skill-item">
-							<i className="devicon-bootstrap-plain-wordmark colored"></i>
-						</li>
-						<li className="skill-item">
-							<i className="devicon-jquery-plain-wordmark colored"></i>
-						</li>
-						<li className="skill-item">
 							<i className="devicon-react-original-wordmark colored"></i>
 						</li>
-						<li className='skill-item'>
-							<img className='handle-icon' src='/images/handlebars.png'/>
+						<li className="skill-item">
+							<i className="devicon-typescript-plain colored"></i>
+						</li>
+						<li className="skill-item">
+							<i className="devicon-angularjs-plain colored"></i>
 						</li>
 					</ul>
 				</div>
@@ -47,7 +44,13 @@ const Skills = (props) => {
 							<i className="devicon-mongodb-plain-wordmark colored"></i>
 						</li>
 						<li className='skill-item'>
-							<i className="devicon-webpack-plain-wordmark colored"></i>
+							<i className="devicon-tomcat-line-wordmark"></i>
+						</li>
+						<li className='skill-item'>
+							<i className="devicon-csharp-line colored"></i>
+						</li>
+						<li className='skill-item'>
+							<i className="devicon-dot-net-plain-wordmark colored"></i>
 						</li>
 					</ul>
 				</div>
